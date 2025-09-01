@@ -43,6 +43,7 @@ h1 {
 }
 
 .gallery-item {
+  max-width: 300px;  
   border-radius: 1rem;
   object-fit: cover;
 }
