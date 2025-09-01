@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --faded-blue: #C4D0FF;
+  --white: #fff;
+  --red: #C70707;
+  --background-dk: #00000af0;
+}
+
+body {
+  background-color: var(--background-dk);
+  color: var(--white);
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.intro-text {
+  text-align: center;
+  padding-top: 1rem;
+  color: var(--faded-blue);
+  font-size: 14.5px;
+  font-weight: bolder;
+}
+
+.gallery {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  overflow-x: auto;
+  padding: 1rem;
+  filter: blur(0.5px);
+}
+
+.gallery-item {
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.gallery-item:hover {
+  transform: scale(1.08);
+  transition: transform 0.2s linear;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+}
+
+#close-btn {
+  position: absolute;
+  align-self: flex-start;
+  margin-top: 1rem;
+  border: none;
+  font-size: 3rem;
+  background-color: inherit;
+  color: var(--white);
+  right: 1rem;
+}
+
+#close-btn:hover {
+  color: var(--red);
+  transition: color 0.1s linear;
+}
+
+#lightbox-image {
+  width: 90%;
+}
+
+footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 14.5px;
+  font-weight: bolder;
+}
+
+footer > a:link {
+  color: var(--faded-blue);
+  text-decoration: none;
+}
+
+footer > a:hover {
+  text-decoration: underline;
+}

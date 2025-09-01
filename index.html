@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Lightbox Viewer</title>
+</head>
+
+<body>
+  <h1>Uri Gallery</h1>
+  <p class="intro-text">View all of Uri's image collection.<br />Click on an image to view it clearly.</p>
+  <div class="gallery">
+    <img src="./gallery/2d-dodge-srt.jpg" class="gallery-item" alt="a thumbnail of a 2d dodge srt car" loading="lazy">
+    <img src="./gallery/programmer-sipping-coffee.png" class="gallery-item" alt="a thumbnail of a cool 2d programmer" loading="lazy">
+    <img src="./gallery/young-rapper.jpg" class="gallery-item" alt="a thumbnail of a young rappper" loading="lazy">
+    <img src="./gallery/blue-toon-spider.png" class="gallery-item" alt="a thumbnail of a cartoon spider" loading="lazy">
+    <img src="./gallery/toon-tarantula.png" class="gallery-item" alt="a thumbnail of a 2d tarantula" loading="lazy">
+    <img src="./gallery/freehand-spider.jpg" class="gallery-item" alt="a thumbnail of spider drawing" loading="lazy">
+    <img src="./gallery/spider-svg.jpg" class="gallery-item" alt="a thumbnail of a basic spider svg" loading="lazy">
+    <img src="./gallery/black-hoodie-robot.jpg" class="gallery-item" alt="a thumbnail of a robot listening to music" loading="lazy">
+    <img src="./gallery/programming-robot.png" class="gallery-item" alt="a thumbnail of a robot coding on a tablet" loading="lazy">
+    <img src="./gallery/springs-reopening.png" class="gallery-item" alt="a thumbnail of a poster created by Uri" loading="lazy">
+  </div>
+  <div class="lightbox">
+    <button id="close-btn">&times;</button>
+    <img id="lightbox-image">
+  </div>
+  
+  <footer>
+    Coded by <a href="https://uriri-007.github.io/Uri-Homepage/" target="_blank">Uri Okhai</a>. Project from <a href="https://www.freecodecamp.org/learn/full-stack-developer/lab-lightbox-viewer/build-a-lightbox-viewer" target="_blank">freeCodeCamp</a>.
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
